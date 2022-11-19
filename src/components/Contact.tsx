@@ -7,7 +7,7 @@ export const Contact = () => {
 		<div className='flex flex-col mb-10 mx-auto'>
 			<div className='flex justify-center items-center'>
 				<form
-					action='https://getform.io/f/(customSlugHere)'
+					action={import.meta.env.VITE_SLUG_FORM_KEY}
 					method='POST'
 					className='flex flex-col w-full md:w-7/12'>
 					<Title>Contact</Title>
@@ -29,7 +29,7 @@ export const Contact = () => {
 						name='message'
 						placeholder='Message'
 						rows={10}
-						className='p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none'></textarea>
+						className='mt-2 p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none'></textarea>
 
 					<button
 						type='button'
