@@ -1,8 +1,11 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { Title } from './Title';
 
 export const Contact = () => {
+	const { t } = useTranslation();
+
 	return (
 		<div className='flex flex-col mb-10 mx-auto'>
 			<div className='flex justify-center items-center'>
@@ -10,11 +13,11 @@ export const Contact = () => {
 					action={import.meta.env.VITE_SLUG_FORM_KEY}
 					method='POST'
 					className='flex flex-col w-full md:w-7/12'>
-					<Title>Contact</Title>
+					<Title>{t('contato')}</Title>
 					<input
 						type='text'
 						name='name'
-						placeholder='Name'
+						placeholder={t('inputName') as string}
 						className='p-2 bg-transparent border-2 rounded-md focus:outline-none'
 					/>
 
@@ -27,14 +30,14 @@ export const Contact = () => {
 
 					<textarea
 						name='message'
-						placeholder='Message'
+						placeholder={t('inputMessage') as string}
 						rows={10}
 						className='mt-2 p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none'></textarea>
 
 					<button
-						type='button'
+						type='submit'
 						className='text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-yellow-500 to-pink-500 drop-shadow-md hover:stroke-white'>
-						Work With Me
+						{t('submitAbout')}
 					</button>
 				</form>
 			</div>

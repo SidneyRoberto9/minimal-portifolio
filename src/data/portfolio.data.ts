@@ -11,12 +11,12 @@ export const portfolioData: IPortfolioItem[] = [
 		title: 'Developer Portfolio',
 		imgUrl: '/assets/dev-portfolio.jpg',
 		stack: ['React', 'Tailwind', 'Vite'],
-		link: 'https://fkcodes.com',
+		link: 'https://sidney-dev.vercel.app/',
 	},
 	{
-		title: 'AI Nerf Gun',
-		imgUrl: '/assets/ai-nerf-gun.jpg',
-		stack: ['Python', 'C++', 'Robotics'],
-		link: 'https://fkcodes.com',
+		title: 'TMDB Movie Search',
+		imgUrl: '/assets/tmdb.png',
+		stack: ['Angular', 'RXjs', 'SASS'],
+		link: 'https://tmdb-desafio-promobit-angular.netlify.app/home',
 	},
 ];
