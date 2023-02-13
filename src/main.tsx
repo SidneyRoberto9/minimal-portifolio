@@ -9,7 +9,7 @@ import i18next from './i18n';
 i18next.t('my.key');
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
 );
