@@ -6,6 +6,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { Intro } from './components/Intro';
 import { Moon } from './components/Moon';
+import { More } from './components/More';
 import { Portfolio } from './components/Portfolio';
 import { Sun } from './components/Sun';
 import { Timeline } from './components/Timeline';
@@ -62,6 +63,7 @@ function App() {
         <div className="max-w-5xl w-11/12 mx-auto">
           <Intro />
           <Portfolio />
+          <More />
           <Timeline />
           <Contact />
           <Footer />
