@@ -19,6 +19,7 @@ export const Contact = () => {
             name="name"
             placeholder={t('inputName') as string}
             className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
+            required
           />
 
           <input
@@ -26,6 +27,7 @@ export const Contact = () => {
             name="email"
             placeholder="Email"
             className="mt-2 p-2 bg-transparent border-2 rounded-md focus:outline-none"
+            required
           />
 
           <textarea
@@ -33,6 +35,7 @@ export const Contact = () => {
             placeholder={t('inputMessage') as string}
             rows={10}
             className="mt-2 p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none"
+            required
           ></textarea>
 
           <button
