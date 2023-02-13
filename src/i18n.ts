@@ -14,7 +14,7 @@ const resources = {
       footer: 'All rights reserved',
       about:
         "I'm a programmer with a passion for web development, with a strong emphasis on back-end development, I am currently majoring in computer science and from time to time I challenge myself to develop platforms and websites to acquire more knowledge and deepen my knowledge in the area, my goal is to one day become a reference in the area.",
-      next: 'View More',
+      next: 'View More Projects',
     },
   },
   pt: {
@@ -29,7 +29,7 @@ const resources = {
       footer: 'Todos os direitos reservados',
       about:
         'Sou um programador apaixonado pelo desenvolvimento web, com bastante ênfase no desenvolvimento back-end, atualmente estou graduando em ciência da computação e de vez em quando eu me desafio a desenvolver plataformas e sites para adquirir mais conhecimento e me aprofundar na área, tenho como objetivo um dia me referencia na área.',
-      next: 'Veja Mais',
+      next: 'Veja Mais Projetos',
     },
   },
 };

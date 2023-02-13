@@ -4,7 +4,7 @@ export function More() {
   const { t } = useTranslation();
 
   return (
-    <div className="h-4 w-32 my-8 mx-auto">
+    <div className="flex items-center justify-center h-4 w-64 my-8 mx-auto">
       <a
         href="https://github.com/SidneyRoberto9"
         target="_blank"
