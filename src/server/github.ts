@@ -7,7 +7,7 @@ import { IPortfolioItem } from "@/interfaces/typesPortfolio"
 export const getGithubRepoData = async (): Promise<IPortfolioItem[]> => {
   try {
     const { data } = await axios.get(
-      "https://api.github.com/users/sidneyroberto9/repos?sort=created&direction=desc&per_page=6"
+      "https://api.github.com/users/sidneyroberto9/repos?sort=created&direction=desc&per_page=20"
     )
     return filterGithubRepoData(data)
   } catch (error) {
