@@ -1,16 +1,18 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next"
 
-import { timelineDataEn, timelineDataPT } from '../data/timeline.data';
-import { TimelineItem } from './TimelineItem';
-import { Title } from './Title';
+import { Container } from "@/components/Container"
+import { TimelineItem } from "@/components/TimelineItem"
+import { Title } from "@/components/Title"
+import { timelineDataEn, timelineDataPT } from "@/data/timeline.data"
 
 export const Timeline = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
+
   return (
-    <div className="flex flex-col md:flex-row justify-center my-20">
+    <Container className="my-20 flex flex-col justify-center md:flex-row">
       <div className="w-full md:w-7/12">
         <Title>Timeline</Title>
-        {t('language') == 'pt' &&
+        {t("language") == "pt" &&
           timelineDataPT.map((item) => (
             <TimelineItem
               year={item.year}
@@ -21,7 +23,7 @@ export const Timeline = () => {
             />
           ))}
 
-        {t('language') == 'en' &&
+        {t("language") == "en" &&
           timelineDataEn.map((item) => (
             <TimelineItem
               year={item.year}
@@ -34,6 +36,6 @@ export const Timeline = () => {
 
         {}
       </div>
-    </div>
-  );
-};
+    </Container>
+  )
+}

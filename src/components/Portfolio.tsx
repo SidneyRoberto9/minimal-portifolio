@@ -1,22 +1,33 @@
-import { Fragment } from 'react';
-
-import { portfolioData } from '../data/portfolio.data';
-import { PortfolioItem } from './PortfolioItem';
+import { Container } from "@/components/Container"
+import { More } from "@/components/More"
+import { PortfolioItem } from "@/components/PortfolioItem"
+import { getGithubRepoData } from "@/server/github"
+import { useQuery } from "@tanstack/react-query"
 
 export const Portfolio = () => {
+  const { data } = useQuery({
+    queryKey: ["github", "repo"],
+    queryFn: getGithubRepoData,
+    initialData: [],
+    gcTime: 60 * 60 * 24,
+  })
+
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {portfolioData.map((project) => (
-          <PortfolioItem
-            key={project.title}
-            title={project.title}
-            imgUrl={project.imgUrl}
-            link={project.link}
-            stack={project.stack}
-          />
-        ))}
+    <Container>
+      <div className="flex flex-col items-center justify-center md:flex-row">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {data.map((project) => (
+            <PortfolioItem
+              key={project.title}
+              title={project.title}
+              imgUrl={project.imgUrl}
+              link={project.link}
+              stack={project.stack}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  );
-};
+      <More />
+    </Container>
+  )
+}
