@@ -1,8 +1,8 @@
-import { Container } from "@/components/Container"
-import { More } from "@/components/More"
-import { PortfolioItem } from "@/components/PortfolioItem"
-import { getGithubRepoData } from "@/server/github"
-import { useQuery } from "@tanstack/react-query"
+import { useQuery } from '@tanstack/react-query';
+import { getGithubRepoData } from '@/server/github';
+import { PortfolioItem } from '@/components/PortfolioItem';
+import { More } from '@/components/More';
+import { Container } from '@/components/Container';
 
 export const Portfolio = () => {
   const { data } = useQuery({

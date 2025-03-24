@@ -1,20 +1,27 @@
-import axios from "axios"
+import axios from 'axios';
 
-import { portfolioData } from "@/data/portfolio.data"
-import { GithubRepoResponse } from "@/interfaces/typesGithub"
-import { IPortfolioItem } from "@/interfaces/typesPortfolio"
+import { tryCatch } from '@/server/tryCatch';
+import { IPortfolioItem } from '@/domain/portfolio';
+import { GithubRepoResponse } from '@/domain/github';
+import { portfolioData } from '@/data/portfolio.data';
 
 export const getGithubRepoData = async (): Promise<IPortfolioItem[]> => {
-  try {
-    const { data } = await axios.get(
-      "https://api.github.com/users/sidneyroberto9/repos?sort=created&direction=desc&per_page=20"
-    )
-    return filterGithubRepoData(data)
-  } catch (error) {
-    console.error("Error fetching GitHub repository data:", error)
+  const result = await tryCatch(
+    axios.get("https://api.github.com/users/sidneyroberto9/repos", {
+      params: {
+        sort: "created",
+        direction: "desc",
+        per_page: 6,
+      },
+    })
+  )
 
+  if (result.error) {
+    console.error("Error fetching GitHub repository data:", result.error)
     return portfolioData
   }
+
+  return filterGithubRepoData(result.data.data)
 }
 
 const filterGithubRepoData = (data: GithubRepoResponse[]) => {
