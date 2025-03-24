@@ -1,4 +1,4 @@
-import { IPortfolioItem } from "@/interfaces/typesPortfolio"
+import { IPortfolioItem } from "@/domain/portfolio"
 
 export const portfolioData: IPortfolioItem[] = [
   {

@@ -1,4 +1,4 @@
-import { ITimelineItem as TimelineItemProps } from "@/interfaces/typesTimeline"
+import { ITimelineItem as TimelineItemProps } from "@/domain/timeline"
 
 export const TimelineItem = ({
   year,

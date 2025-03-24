@@ -1,4 +1,4 @@
-import { IPortfolioItem as PortfolioItemProps } from "@/interfaces/typesPortfolio"
+import { IPortfolioItem as PortfolioItemProps } from "@/domain/portfolio"
 
 export const PortfolioItem = ({
   title,

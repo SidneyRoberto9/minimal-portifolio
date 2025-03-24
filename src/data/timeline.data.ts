@@ -1,4 +1,4 @@
-import { ITimelineItem } from "@/interfaces/typesTimeline"
+import { ITimelineItem } from "@/domain/timeline"
 
 export const timelineDataEn: ITimelineItem[] = [
   {

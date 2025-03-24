@@ -1,4 +1,4 @@
-import { ITitle as TitleProps } from "@/interfaces/typesTitle"
+import { ITitle as TitleProps } from "@/domain/title"
 
 export const Title = ({ children, id }: TitleProps) => {
   return (
