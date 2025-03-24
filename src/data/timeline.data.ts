@@ -2,104 +2,104 @@ import { ITimelineItem } from "@/interfaces/typesTimeline"
 
 export const timelineDataEn: ITimelineItem[] = [
   {
-    year: "Today",
-    title: "Tech Leader - Media4all",
-    duration: "Present",
+    year: "2024",
+    title: "Software Engineer - Conducco",
+    duration: "Jan 2024 – Nov 2024",
     details:
-      "I am one of the developers responsible for creating and maintaining features in your Platform. Throughout the work, along with the team, I talk to the client, listening to their needs, and from that, I develop according to what was proposed. I used Spring Boot in the Back-End and Angular in the Front-End.",
+      "Responsible for developing and continuously improving an insurance and corporate benefits automation platform. Led the migration from CRA to Vite, enhancing build time and performance. Worked with React.js, Zustand, TypeORM, PostgreSQL, and other modern tools to ensure scalability, usability, and clean architecture.",
+  },
+  {
+    year: "2024",
+    title: "Pleno Full Stack Developer - Akasoft Tecnologia",
+    duration: "3 months",
+    details:
+      "Worked on municipal tax payment systems, focusing on backend API integration using Node.js, Fastify, Prisma, and Postgres. Contributed to frontend development and offered technical support to the team, ensuring robust delivery with agile methodologies.",
+  },
+  {
+    year: "2022 - Present",
+    title: "Tech Lead & Full Stack Developer - Media4all",
+    duration: "Since Jul 2022",
+    details:
+      "Tech Lead and Full Stack Developer using Angular and Spring Boot. Responsible for implementing and maintaining features, integrating third-party services like AWS S3, Stripe, and Office APIs, and leading initiatives that improve performance and maintainability.",
   },
   {
     year: "2022",
     title: "Junior Full Stack Developer - PBHub Solutions",
     duration: "4 months",
     details:
-      "During my period in the company, I worked actively in the development of new features and in the maintenance of the Uchallenger platform server, which is a platform for private CSGO matches with bets, among these maintenances we can mention, improvements in the conversation flow between server and client, with the socket implementation, the launcher implementation responsible for obtaining the CSGO matches data, along with the creation of modifications for the CSGO server itself using SourcePawn and C++, improving even more the conversation between all the platform components.",
+      "Contributed to the development and maintenance of Uchallenger, a CSGO private match and betting platform. Enhanced server-client communication with sockets, created a custom launcher to fetch game data, and developed server-side mods using SourcePawn and C++.",
   },
   {
-    year: "2022",
-    title: "Traine Full Stack Developer - Media4all",
-    duration: "6 months",
+    year: "2021 - 2022",
+    title: "Intern Full Stack Developer - Media4all",
+    duration: "9 months",
     details:
-      "I worked as a full stack developer with Angular and Spring technologies, where maintenance was done on existing platforms and the creation of new platforms with the support of a full developer from the company itself.",
+      "Supported platform maintenance and new feature development using Angular and Spring Boot. Collaborated closely with senior developers, improving my full-stack skills and understanding of real-world project workflows.",
   },
   {
-    year: "2021",
-    title: "Trainee Qa - Media4all",
-    duration: "4 months",
-    details:
-      "I worked on manual testing on all the company's platforms and started the implementation of manual testing on their main system, using junit and java.",
-  },
-  {
-    year: "2020",
-    title: "Qa - Fabrica de Software UNIPE",
-    duration: "6 months",
-    details:
-      "I joined an extension project in college as a QA (Quality Assurance), and was introduced to several testing methods using Junit 4 and Java, Selenium, and among the points covered in the project, the biggest one was automating tests on the platform.",
-  },
-  {
-    year: "2020",
-    title: "Bachelor in Computer Science",
+    year: "2020 - 2024",
+    title: "Bachelor's in Computer Science - UNIPE",
     duration: "4 years",
     details:
-      "After a few years practicing independently and going through several starts in other degrees, I am starting the degree I have always wanted and intend to pursue until the end.",
+      "Pursued a degree aligned with my passion for programming and problem-solving, deepening my knowledge in software development, algorithms, and system architecture.",
   },
   {
     year: "2017",
     title: "First Line of Code",
-    duration: "the beginning",
+    duration: "The beginning",
     details:
-      "I wrote my first real line of code in python that introduced me to this world, the person responsible for bringing me into this world was Gustavo guanabara.",
+      "Wrote my first line of Python code, igniting my passion for programming. Inspired by Gustavo Guanabara’s content, I began my journey into the tech world.",
   },
 ]
 
 export const timelineDataPT: ITimelineItem[] = [
   {
-    year: "Hoje",
-    title: "Tech Leader - Media4all",
-    duration: "Atualmente",
+    year: "2024",
+    title: "Engenheiro de Software - Conducco",
+    duration: "Jan 2024 – Nov 2024",
     details:
-      "Sou um dos desenvolvedores responsáveis por criar e realizar a manutenção de features em sua Plataforma. Ao longo do trabalho, junto com a equipe, converso com a cliente, ouvindo suas necessidades, e a partir disso, desenvolvo de acordo com o que foi proposto. Utilizei Spring Boot no Back-End e Angular no Front-End.",
+      "Responsável pelo desenvolvimento e aprimoramento contínuo de uma plataforma de automação de seguros e benefícios corporativos. Liderei a migração de CRA para Vite, melhorando significativamente o tempo de build e a performance. Trabalhei com React.js, Zustand, TypeORM, PostgreSQL, entre outras tecnologias modernas.",
+  },
+  {
+    year: "2024",
+    title: "Desenvolvedor Full Stack Pleno - Akasoft Tecnologia",
+    duration: "3 meses",
+    details:
+      "Atuei em sistemas de pagamento de tributos municipais, com foco na integração de APIs utilizando Node.js, Fastify, Prisma e Postgres. Contribuí também no front-end e prestei suporte técnico à equipe, garantindo entregas ágeis e eficazes.",
+  },
+  {
+    year: "2022 - Hoje",
+    title: "Tech Lead & Desenvolvedor Full Stack - Media4all",
+    duration: "Desde Jul 2022",
+    details:
+      "Atuação como Tech Lead e Desenvolvedor Full Stack utilizando Angular e Spring Boot. Responsável por implementar e manter funcionalidades, integrar serviços como AWS S3, Stripe e Office APIs, liderando melhorias de performance e arquitetura.",
   },
   {
     year: "2022",
-    title: "Desenvolvedor Full Stack Junior - PBHub Soluções",
+    title: "Desenvolvedor Full Stack Júnior - PBHub Soluções",
     duration: "4 meses",
     details:
-      "Durante o meu período na empresa, atuei ativamente no desenvolvimento de novas funcionalidades e na manutenção do servidor da plataforma Uchallenger, que é uma plataforma de partidas privadas de CSGO com apostas, dentre essas manutenções pode-se citar, melhorias no fluxo de conversação entre servidor e cliente, com a implantação do socket, a implementação do launcher responsável por obter os dados das partidas de CSGO, junto a criação de modificações para o próprio servidor de CSGO utilizando o SourcePawn e o C++, melhorando ainda mais a conversação entre todos os componentes da plataforma.",
+      "Trabalhei na evolução da plataforma Uchallenger, focada em partidas privadas de CSGO com apostas. Melhorei a comunicação entre servidor e cliente com sockets, criei um launcher para captação de dados das partidas e desenvolvi modificações no servidor CSGO usando SourcePawn e C++.",
   },
   {
-    year: "2022",
-    title: "Estagio Desenvolvedor FullStack - Media4all",
-    duration: "6 meses",
+    year: "2021 - 2022",
+    title: "Estagiário Full Stack - Media4all",
+    duration: "9 meses",
     details:
-      "Atuei como desenvolvedor full stack com as tecnologias Angular e Spring, onde eram feitos manutenções em plataformas existentes e criação de novas plataformas com um apoio de  um desenvolvedor pleno da própria empresa.",
+      "Atuei na manutenção e criação de funcionalidades em plataformas da empresa, utilizando Angular e Spring Boot. Trabalhei em parceria com desenvolvedores plenos, aprimorando minhas habilidades full stack.",
   },
   {
-    year: "2021",
-    title: "Estagio Qa - Media4all",
-    duration: "4 meses",
-    details:
-      "Atuei em testes manuais em todas as  plataformas da empresa  e comecei a implantação de testes manuais no seus sistema principais, utilizando o junit e java.",
-  },
-  {
-    year: "2020",
-    title: "Qa - Fabrica de Software UNIPE",
-    duration: "6 meses",
-    details:
-      "Entrei em um projeto de extensão dentro da faculdade, como QA (Quality Assurance), fui introduzido em diversos métodos de testes utilizando-se de junit 4 e java, selenium, dentre os pontos tratados no projeto o maior deles foi a automatização de testes na plataforma.",
-  },
-  {
-    year: "2020",
-    title: "Graduação em Ciência da Computação",
+    year: "2020 - 2024",
+    title: "Bacharelado em Ciência da Computação - UNIPE",
     duration: "4 anos",
     details:
-      "Depois de alguns anos praticando de maneira independente e passando por diversos inícios em outras graduações inicio a graduação que sempre desejei e pretendo persegui-la ate o fim.",
+      "Graduação na área de tecnologia que sempre desejei seguir, com foco em desenvolvimento de software, algoritmos e arquitetura de sistemas.",
   },
   {
     year: "2017",
     title: "Minha Primeira Linha de Código",
-    duration: "O Começo",
+    duration: "O começo",
     details:
-      "Escrevi a minha primeira linha de código real em python que  me introduziu nesse mundo, o responsável por me trazer para esse mundo foi o Gustavo guanabara.",
+      "Escrevi minha primeira linha de código em Python, despertando minha paixão por programação. Fui inspirado pelo conteúdo do Gustavo Guanabara.",
   },
 ]

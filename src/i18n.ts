@@ -1,45 +1,43 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import i18n from "i18next"
+import { initReactI18next } from "react-i18next"
 
 const resources = {
   en: {
     translation: {
-      language: 'en',
-      a: 'Welcome to React and react-i18next',
-      subtitle: 'Full Stack Web Developer',
-      contato: 'Contact',
-      inputName: 'Name',
-      inputMessage: 'Message',
-      submitAbout: 'Work With Me',
-      footer: 'All rights reserved',
+      language: "en",
+      subtitle: "Full Stack Web Developer",
+      contato: "Contact",
+      inputName: "Name",
+      inputMessage: "Message",
+      submitAbout: "Work With Me",
+      footer: "All rights reserved",
       about:
-        "I'm a programmer with a passion for web development, with a strong emphasis on back-end development, I am currently majoring in computer science and from time to time I challenge myself to develop platforms and websites to acquire more knowledge and deepen my knowledge in the area, my goal is to one day become a reference in the area.",
-      next: 'View More Projects',
+        "I'm a programmer passionate about web development, especially when it comes to back-end solutions. With a degree in Computer Science, I’m constantly seeking new challenges—developing platforms and websites to expand my skills and stay up to date with the latest technologies. I'm driven by the desire to grow every day and build a solid career, with the long-term goal of becoming a reference in the field.",
+      next: "View More Projects",
     },
   },
   pt: {
     translation: {
-      language: 'pt',
-      a: 'Bem vindo ao React e react-i18next',
-      subtitle: 'Desenvolvedor Web Full Stack',
-      contato: 'Contato',
-      inputName: 'Nome',
-      inputMessage: 'Mensagem',
-      submitAbout: 'Trabalhe Comigo',
-      footer: 'Todos os direitos reservados',
+      language: "pt",
+      subtitle: "Desenvolvedor Web Full Stack",
+      contato: "Contato",
+      inputName: "Nome",
+      inputMessage: "Mensagem",
+      submitAbout: "Trabalhe Comigo",
+      footer: "Todos os direitos reservados",
       about:
-        'Sou um programador apaixonado pelo desenvolvimento web, com bastante ênfase no desenvolvimento back-end, atualmente estou graduando em ciência da computação e de vez em quando eu me desafio a desenvolver plataformas e sites para adquirir mais conhecimento e me aprofundar na área, tenho como objetivo um dia me referencia na área.',
-      next: 'Veja Mais Projetos',
+        "Sou um programador apaixonado por desenvolvimento web, com foco especial em soluções back-end. Graduado em Ciência da Computação, estou sempre em busca de novos desafios, desenvolvendo plataformas e sites como forma de aprimorar minhas habilidades e me manter atualizado com as tendências do mercado. Tenho como motivação o crescimento contínuo e o objetivo de construir uma carreira sólida, tornando-me uma referência na área.",
+      next: "Veja Mais Projetos",
     },
   },
-};
+}
 
 i18n.use(initReactI18next).init({
   resources: resources,
-  lng: 'pt',
+  lng: "pt",
   interpolation: {
     escapeValue: false,
   },
-});
+})
 
-export default i18n;
+export default i18n

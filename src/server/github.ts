@@ -20,7 +20,7 @@ export const getGithubRepoData = async (): Promise<IPortfolioItem[]> => {
 const filterGithubRepoData = (data: GithubRepoResponse[]) => {
   return data
     .filter((repo) => repo.topics.length > 0)
-    .slice(0, 9)
+    .slice(0, 6)
     .map(
       (repo) =>
         ({
