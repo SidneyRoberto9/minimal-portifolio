@@ -62,7 +62,7 @@ export function App() {
       </button>
 
       <div className="min-h-screen bg-white font-inter text-stone-900 dark:bg-stone-900 dark:text-stone-300">
-        <div className="mx-auto w-11/12 max-w-5xl">
+        <div className="mx-auto w-11/12 max-w-6xl">
           <Intro />
           <Portfolio />
           <Timeline />
